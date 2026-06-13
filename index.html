@@ -1,1 +1,606 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmet Nursin Hair</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+:root{
+--gold:#d4af37;
+--black:#050505;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+z-index:999;
+border-bottom:1px solid rgba(212,175,55,.3);
+}
+
+nav{
+max-width:1400px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:var(--gold);
+}
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.randevuBtn{
+padding:14px 25px;
+border:1px solid var(--gold);
+border-radius:12px;
+color:var(--gold);
+text-decoration:none;
+}
+
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:120px 8%;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:90px;
+line-height:1;
+font-weight:700;
+}
+
+.hero span{
+color:var(--gold);
+}
+
+.hero p{
+margin-top:25px;
+font-size:20px;
+max-width:600px;
+color:#ddd;
+}
+
+.heroButtons{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:35px;
+}
+
+.boxBtn{
+background:#111;
+border:1px solid var(--gold);
+padding:18px 22px;
+border-radius:14px;
+text-decoration:none;
+color:white;
+min-width:180px;
+text-align:center;
+}
+
+.sectionTitle{
+text-align:center;
+font-size:50px;
+color:var(--gold);
+margin-bottom:50px;
+}
+
+.services{
+padding:100px 20px;
+}
+
+.cards{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:#0d0d0d;
+border:1px solid rgba(212,175,55,.5);
+border-radius:18px;
+padding:30px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(212,175,55,.3);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.price{
+font-size:34px;
+font-weight:700;
+color:var(--gold);
+}
+
+.card p{
+color:#bdbdbd;
+font-size:14px;
+margin-bottom:15px;
+line-height:1.6;
+}
+
+.appointment{
+padding:100px 20px;
+}
+
+.appointmentBox{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:350px 1fr;
+gap:25px;
+}
+
+.leftInfo{
+background:#0d0d0d;
+border:1px solid rgba(212,175,55,.4);
+border-radius:20px;
+padding:35px;
+}
+
+.leftInfo h2{
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.leftInfo ul{
+list-style:none;
+margin-top:20px;
+}
+
+.leftInfo li{
+margin-bottom:15px;
+}
+
+.formArea{
+background:#0d0d0d;
+border:1px solid rgba(212,175,55,.4);
+border-radius:20px;
+padding:35px;
+}
+
+.formGrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.formGrid input,
+.formGrid select{
+padding:16px;
+background:#111;
+border:1px solid #333;
+border-radius:12px;
+color:white;
+}
+
+.submitBtn{
+margin-top:15px;
+width:100%;
+padding:18px;
+background:var(--gold);
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+.contact{
+padding:100px 20px;
+}
+
+.contactGrid{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+}
+
+.contactCard{
+background:#0d0d0d;
+border:1px solid rgba(212,175,55,.4);
+border-radius:20px;
+padding:30px;
+}
+
+.contactCard h3{
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.contactCard p{
+line-height:1.8;
+}
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(212,175,55,.3);
+color:#999;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.appointmentBox{
+grid-template-columns:1fr;
+}
+
+.contactGrid{
+grid-template-columns:1fr;
+}
+
+.formGrid{
+grid-template-columns:1fr;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+AN HAIR
+</div>
+
+<div class="menu">
+<a href="#anasayfa">Ana Sayfa</a>
+<a href="#hizmet">Hizmetler</a>
+<a href="#randevu">Randevu</a>
+<a href="#iletisim">İletişim</a>
+</div>
+
+<a class="randevuBtn" href="#randevu">
+Randevu Al
+</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="anasayfa">
+
+<div>
+
+<h1>
+AHMET NURSIN
+<br>
+<span>HAIR</span>
+</h1>
+
+<p>
+Profesyonel erkek bakım hizmetleri.
+Tarzını göster, farkını hisset.
+</p>
+
+<div class="heroButtons">
+
+<a class="boxBtn"
+href="https://wa.me/905541661028">
+WhatsApp Randevu
+</a>
+
+<a class="boxBtn"
+href="tel:05441661028">
+0544 166 10 28
+</a>
+
+<a class="boxBtn"
+href="https://maps.apple/p/-v-_Lkx9j6erjP">
+Konum Aç
+</a>
+
+<a class="boxBtn"
+href="https://instagram.com/ahmetkrll_">
+Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="services" id="hizmet">
+
+<h2 class="sectionTitle">
+Hizmetlerimiz
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Saç Traşı</h3>
+<p>Profesyonel kesim</p>
+<div class="price">500 TL</div>
+</div>
+
+<div class="card">
+<h3>Sakal Traşı</h3>
+<p>Şekillendirme ve bakım</p>
+<div class="price">250 TL</div>
+</div>
+
+<div class="card">
+<h3>Saç + Sakal</h3>
+<p>Kombine hizmet</p>
+<div class="price">700 TL</div>
+</div>
+
+<div class="card">
+<h3>Saç + Sakal + Maske</h3>
+<div class="price">800 TL</div>
+</div>
+
+<div class="card">
+<h3>Çocuk Traşı</h3>
+<div class="price">400 TL</div>
+</div>
+
+<div class="card">
+<h3>Buharlı Yüz Bakımı</h3>
+<div class="price">1500 TL</div>
+</div>
+
+<div class="card">
+<h3>Kil Maskesi</h3>
+<div class="price">200 TL</div>
+</div>
+
+<div class="card">
+<h3>Ağda</h3>
+<div class="price">200 TL</div>
+</div>
+
+<div class="card">
+<h3>İple Kaş Alımı</h3>
+<div class="price">300 TL</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="appointment" id="randevu">
+
+<h2 class="sectionTitle">
+Randevu Al
+</h2>
+
+<div class="appointmentBox">
+
+<div class="leftInfo">
+
+<h2>WhatsApp Randevu</h2>
+
+<p>
+Formu doldurun, bilgileriniz direkt
+WhatsApp üzerinden bize gönderilsin.
+</p>
+
+<ul>
+<li>✔ Hızlı dönüş</li>
+<li>✔ Kolay rezervasyon</li>
+<li>✔ Güvenli iletişim</li>
+</ul>
+
+</div>
+
+<div class="formArea">
+
+<div class="formGrid">
+
+<input id="ad" placeholder="Ad Soyad">
+
+<input id="telefon"
+placeholder="Telefon Numarası">
+
+<select id="hizmet">
+
+<option>Saç Traşı</option>
+<option>Sakal Traşı</option>
+<option>Saç + Sakal</option>
+<option>Saç + Sakal + Maske</option>
+<option>Çocuk Traşı</option>
+<option>Buharlı Yüz Bakımı</option>
+<option>Kil Maskesi</option>
+<option>Ağda</option>
+<option>İple Kaş Alımı</option>
+
+</select>
+
+<input id="tarih" type="date">
+
+<input id="saat" type="time">
+
+<input id="not"
+placeholder="Not (İsteğe Bağlı)">
+
+</div>
+
+<button
+class="submitBtn"
+onclick="gonder()">
+
+WhatsApp ile Randevu Oluştur
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="iletisim">
+
+<h2 class="sectionTitle">
+İletişim
+</h2>
+
+<div class="contactGrid">
+
+<div class="contactCard">
+
+<h3>İletişim</h3>
+
+<p>📞 0544 166 10 28</p>
+<p>📸 @ahmetkrll_</p>
+
+</div>
+
+<div class="contactCard">
+
+<h3>Adres</h3>
+
+<p>
+Kurtköy Mahallesi<br>
+Yeşilırmak Caddesi No:4/A<br>
+Seçkin Erkek Kuaförü<br>
+Pendik / İstanbul
+</p>
+
+</div>
+
+<div class="contactCard">
+
+<h3>Konum</h3>
+
+<p>
+Haritada açmak için aşağıdaki linki kullanın.
+</p>
+
+<br>
+
+<a class="randevuBtn"
+href="https://maps.apple/p/-v-_Lkx9j6erjP">
+
+Konumu Aç
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Ahmet Nursin Hair
+<br>
+Tüm Hakları Saklıdır.
+
+</footer>
+
+<script>
+
+function gonder(){
+
+let mesaj =
+"*RANDEVU TALEBİ*%0A%0A"+
+"👤 Ad: "
++document.getElementById('ad').value+
+"%0A"+
+
+"📞 Telefon: "
++document.getElementById('telefon').value+
+"%0A"+
+
+"✂ Hizmet: "
++document.getElementById('hizmet').value+
+"%0A"+
+
+"📅 Tarih: "
++document.getElementById('tarih').value+
+"%0A"+
+
+"⏰ Saat: "
++document.getElementById('saat').value+
+"%0A"+
+
+"📝 Not: "
++document.getElementById('not').value;
+
+window.open(
+"https://wa.me/905541661028?text="+mesaj,
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
