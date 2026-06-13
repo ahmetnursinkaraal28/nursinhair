@@ -5,15 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahmet Nursin Hair</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Arial,sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -22,135 +20,67 @@ background:#050505;
 color:white;
 }
 
-:root{
---gold:#d4af37;
---black:#050505;
-}
-
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(0,0,0,.85);
-backdrop-filter:blur(10px);
-z-index:999;
-border-bottom:1px solid rgba(212,175,55,.3);
-}
-
-nav{
-max-width:1400px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
+padding:80px 20px;
+text-align:center;
+background:#000;
+border-bottom:1px solid #d4af37;
 }
 
 .logo{
-font-size:32px;
-font-weight:700;
-color:var(--gold);
+font-size:48px;
+font-weight:bold;
+color:#d4af37;
 }
 
-.menu{
-display:flex;
-gap:25px;
-}
-
-.menu a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-.randevuBtn{
-padding:14px 25px;
-border:1px solid var(--gold);
-border-radius:12px;
-color:var(--gold);
-text-decoration:none;
-}
-
-.hero{
-min-height:100vh;
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-padding:120px 8%;
-background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1600');
-background-size:cover;
-background-position:center;
-}
-
-.hero h1{
-font-size:90px;
-line-height:1;
-font-weight:700;
-}
-
-.hero span{
-color:var(--gold);
-}
-
-.hero p{
-margin-top:25px;
-font-size:20px;
-max-width:600px;
+.slogan{
+margin-top:15px;
+font-size:22px;
 color:#ddd;
 }
 
-.heroButtons{
+.buttons{
 display:flex;
+justify-content:center;
 flex-wrap:wrap;
 gap:15px;
 margin-top:35px;
 }
 
-.boxBtn{
-background:#111;
-border:1px solid var(--gold);
-padding:18px 22px;
-border-radius:14px;
+.btn{
+background:#d4af37;
+color:#000;
+padding:15px 25px;
+border-radius:12px;
 text-decoration:none;
-color:white;
-min-width:180px;
-text-align:center;
+font-weight:bold;
 }
 
-.sectionTitle{
-text-align:center;
-font-size:50px;
-color:var(--gold);
-margin-bottom:50px;
+section{
+padding:50px 20px;
+max-width:1200px;
+margin:auto;
 }
 
-.services{
-padding:100px 20px;
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:30px;
+color:#d4af37;
 }
 
 .cards{
-max-width:1400px;
-margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
 .card{
-background:#0d0d0d;
-border:1px solid rgba(212,175,55,.5);
-border-radius:18px;
-padding:30px;
+background:#111;
+border:1px solid #d4af37;
+border-radius:15px;
+padding:25px;
 text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 25px rgba(212,175,55,.3);
 }
 
 .card h3{
@@ -158,147 +88,42 @@ margin-bottom:15px;
 }
 
 .price{
-font-size:34px;
-font-weight:700;
-color:var(--gold);
+font-size:32px;
+font-weight:bold;
+color:#d4af37;
 }
 
-.card p{
-color:#bdbdbd;
-font-size:14px;
-margin-bottom:15px;
-line-height:1.6;
-}
-
-.appointment{
-padding:100px 20px;
-}
-
-.appointmentBox{
-max-width:1400px;
-margin:auto;
-display:grid;
-grid-template-columns:350px 1fr;
-gap:25px;
-}
-
-.leftInfo{
-background:#0d0d0d;
-border:1px solid rgba(212,175,55,.4);
-border-radius:20px;
-padding:35px;
-}
-
-.leftInfo h2{
-color:var(--gold);
-margin-bottom:20px;
-}
-
-.leftInfo ul{
-list-style:none;
-margin-top:20px;
-}
-
-.leftInfo li{
-margin-bottom:15px;
-}
-
-.formArea{
-background:#0d0d0d;
-border:1px solid rgba(212,175,55,.4);
-border-radius:20px;
-padding:35px;
-}
-
-.formGrid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-.formGrid input,
-.formGrid select{
-padding:16px;
+.form{
 background:#111;
-border:1px solid #333;
-border-radius:12px;
-color:white;
-}
-
-.submitBtn{
-margin-top:15px;
-width:100%;
-padding:18px;
-background:var(--gold);
-border:none;
-border-radius:12px;
-font-size:18px;
-font-weight:700;
-cursor:pointer;
-}
-
-.contact{
-padding:100px 20px;
-}
-
-.contactGrid{
-max-width:1400px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:20px;
-}
-
-.contactCard{
-background:#0d0d0d;
-border:1px solid rgba(212,175,55,.4);
+border:1px solid #d4af37;
+padding:25px;
 border-radius:20px;
-padding:30px;
 }
 
-.contactCard h3{
-color:var(--gold);
-margin-bottom:20px;
+input,select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
 }
 
-.contactCard p{
-line-height:1.8;
+button{
+width:100%;
+padding:15px;
+background:#d4af37;
+color:black;
+font-weight:bold;
+font-size:18px;
+border:none;
+border-radius:10px;
 }
 
 footer{
-padding:30px;
 text-align:center;
-border-top:1px solid rgba(212,175,55,.3);
-color:#999;
-}
-
-@media(max-width:900px){
-
-.hero{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-.hero h1{
-font-size:55px;
-}
-
-.appointmentBox{
-grid-template-columns:1fr;
-}
-
-.contactGrid{
-grid-template-columns:1fr;
-}
-
-.formGrid{
-grid-template-columns:1fr;
-}
-
-.menu{
-display:none;
-}
-
+padding:40px;
+margin-top:50px;
+border-top:1px solid #d4af37;
 }
 
 </style>
@@ -308,93 +133,50 @@ display:none;
 
 <header>
 
-<nav>
-
 <div class="logo">
-AN HAIR
+AHMET NURSIN HAIR
 </div>
 
-<div class="menu">
-<a href="#anasayfa">Ana Sayfa</a>
-<a href="#hizmet">Hizmetler</a>
-<a href="#randevu">Randevu</a>
-<a href="#iletisim">İletişim</a>
+<div class="slogan">
+Profesyonel Erkek Bakım Hizmetleri
 </div>
 
-<a class="randevuBtn" href="#randevu">
-Randevu Al
+<div class="buttons">
+
+<a class="btn" href="tel:05441661028">
+📞 Hemen Ara
 </a>
 
-</nav>
+<a class="btn" href="https://instagram.com/ahmetkrll_">
+📸 Instagram
+</a>
+
+<a class="btn" href="https://maps.apple/p/-v-_Lkx9j6erjP">
+📍 Konum
+</a>
+
+</div>
 
 </header>
 
-<section class="hero" id="anasayfa">
+<section>
 
-<div>
-
-<h1>
-AHMET NURSIN
-<br>
-<span>HAIR</span>
-</h1>
-
-<p>
-Profesyonel erkek bakım hizmetleri.
-Tarzını göster, farkını hisset.
-</p>
-
-<div class="heroButtons">
-
-<a class="boxBtn"
-href="https://wa.me/905541661028">
-WhatsApp Randevu
-</a>
-
-<a class="boxBtn"
-href="tel:05441661028">
-0544 166 10 28
-</a>
-
-<a class="boxBtn"
-href="https://maps.apple/p/-v-_Lkx9j6erjP">
-Konum Aç
-</a>
-
-<a class="boxBtn"
-href="https://instagram.com/ahmetkrll_">
-Instagram
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="services" id="hizmet">
-
-<h2 class="sectionTitle">
-Hizmetlerimiz
-</h2>
+<h2 class="title">Hizmetlerimiz</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Saç Traşı</h3>
-<p>Profesyonel kesim</p>
 <div class="price">500 TL</div>
 </div>
 
 <div class="card">
 <h3>Sakal Traşı</h3>
-<p>Şekillendirme ve bakım</p>
 <div class="price">250 TL</div>
 </div>
 
 <div class="card">
 <h3>Saç + Sakal</h3>
-<p>Kombine hizmet</p>
 <div class="price">700 TL</div>
 </div>
 
@@ -424,7 +206,7 @@ Hizmetlerimiz
 </div>
 
 <div class="card">
-<h3>İple Kaş Alımı</h3>
+<h3>İple Kaş Alımı + Tasarım</h3>
 <div class="price">300 TL</div>
 </div>
 
@@ -432,97 +214,43 @@ Hizmetlerimiz
 
 </section>
 
-<section class="appointment" id="randevu">
+<section>
 
-<h2 class="sectionTitle">
-Randevu Al
-</h2>
+<h2 class="title">Randevu Al</h2>
 
-<div class="appointmentBox">
-
-<div class="leftInfo">
-
-<h2>WhatsApp Randevu</h2>
-
-<p>
-Formu doldurun, bilgileriniz direkt
-WhatsApp üzerinden bize gönderilsin.
-</p>
-
-<ul>
-<li>✔ Hızlı dönüş</li>
-<li>✔ Kolay rezervasyon</li>
-<li>✔ Güvenli iletişim</li>
-</ul>
-
-</div>
-
-<div class="formArea">
-
-<div class="formGrid">
+<div class="form">
 
 <input id="ad" placeholder="Ad Soyad">
-
-<input id="telefon"
-placeholder="Telefon Numarası">
+<input id="telefon" placeholder="Telefon Numaranız">
 
 <select id="hizmet">
-
 <option>Saç Traşı</option>
 <option>Sakal Traşı</option>
 <option>Saç + Sakal</option>
 <option>Saç + Sakal + Maske</option>
 <option>Çocuk Traşı</option>
-<option>Buharlı Yüz Bakımı</option>
-<option>Kil Maskesi</option>
-<option>Ağda</option>
-<option>İple Kaş Alımı</option>
-
 </select>
 
 <input id="tarih" type="date">
-
 <input id="saat" type="time">
 
-<input id="not"
-placeholder="Not (İsteğe Bağlı)">
-
-</div>
-
-<button
-class="submitBtn"
-onclick="gonder()">
-
-WhatsApp ile Randevu Oluştur
-
+<button onclick="gonder()">
+WhatsApp'tan Randevu Oluştur
 </button>
-
-</div>
 
 </div>
 
 </section>
 
-<section class="contact" id="iletisim">
+<footer>
 
-<h2 class="sectionTitle">
-İletişim
-</h2>
+<h2>İletişim & Adres</h2>
 
-<div class="contactGrid">
-
-<div class="contactCard">
-
-<h3>İletişim</h3>
+<br>
 
 <p>📞 0544 166 10 28</p>
-<p>📸 @ahmetkrll_</p>
 
-</div>
-
-<div class="contactCard">
-
-<h3>Adres</h3>
+<br>
 
 <p>
 Kurtköy Mahallesi<br>
@@ -531,37 +259,6 @@ Seçkin Erkek Kuaförü<br>
 Pendik / İstanbul
 </p>
 
-</div>
-
-<div class="contactCard">
-
-<h3>Konum</h3>
-
-<p>
-Haritada açmak için aşağıdaki linki kullanın.
-</p>
-
-<br>
-
-<a class="randevuBtn"
-href="https://maps.apple/p/-v-_Lkx9j6erjP">
-
-Konumu Aç
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Ahmet Nursin Hair
-<br>
-Tüm Hakları Saklıdır.
-
 </footer>
 
 <script>
@@ -569,33 +266,15 @@ Tüm Hakları Saklıdır.
 function gonder(){
 
 let mesaj =
-"*RANDEVU TALEBİ*%0A%0A"+
-"👤 Ad: "
-+document.getElementById('ad').value+
-"%0A"+
-
-"📞 Telefon: "
-+document.getElementById('telefon').value+
-"%0A"+
-
-"✂ Hizmet: "
-+document.getElementById('hizmet').value+
-"%0A"+
-
-"📅 Tarih: "
-+document.getElementById('tarih').value+
-"%0A"+
-
-"⏰ Saat: "
-+document.getElementById('saat').value+
-"%0A"+
-
-"📝 Not: "
-+document.getElementById('not').value;
+"RANDEVU TALEBİ%0A%0A"+
+"Ad Soyad: "+document.getElementById('ad').value+"%0A"+
+"Telefon: "+document.getElementById('telefon').value+"%0A"+
+"Hizmet: "+document.getElementById('hizmet').value+"%0A"+
+"Tarih: "+document.getElementById('tarih').value+"%0A"+
+"Saat: "+document.getElementById('saat').value;
 
 window.open(
-"https://wa.me/905541661028?text="+mesaj,
-"_blank"
+"https://wa.me/905541661028?text="+mesaj
 );
 
 }
@@ -603,4 +282,4 @@ window.open(
 </script>
 
 </body>
-</html>
+</html> 
